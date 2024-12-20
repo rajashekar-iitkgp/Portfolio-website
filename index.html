@@ -24,7 +24,7 @@
           </div>
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
+            <!-- <li><a href="#services" data-after="Service">Services</a></li> -->
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
@@ -47,10 +47,40 @@
       </div>
     </div>
   </section>
+
+<!-- Floating "Say Hi" Section -->
+<div id="say-hi" class="floating-say-hi">
+  <div class="say-hi-content">
+    <p>👋 Say Hi!</p>
+    <button class="say-hi-btn" onclick="toggleContactForm()">Let's Connect</button>
+  </div>
+</div>
+
+<!-- Contact Form Popup -->
+<div id="contact-form" class="contact-form-overlay">
+  <div class="contact-form">
+    <h2>Send Me a Message</h2>
+    <form id="messageForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" placeholder="Write your message" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+      <button type="button" class="close-btn" onclick="toggleContactForm()">Close</button>
+    </form>
+  </div>
+</div>
+
+
   <!-- End Hero Section  -->
 
   <!-- Service Section -->
-  <section id="services">
+  <!-- <section id="services">
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title">Serv<span>i</span>ces</h1>
@@ -85,102 +115,95 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>  -->
   <!-- End Service Section -->
 
+  
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
+  <div class="projects-header">
+    <h1 class="section-title">Recent <span>Projects</span></h1>
+  </div>
+  <div class="all-projects">
+    <div class="project-item">
+      <div class="project-info">
+        <h1>MERN Stack Shopping Website</h1>
+        <h2>Secure & Feature-Rich</h2>
+        <p>
+          Developed a shopping platform using the MERN stack with JWT authentication for secure user login.
+          Integrated a MySQL database and designed a user-friendly dashboard to manage user profiles and transactions.
+        </p>
       </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
+      <div class="project-img">
+        <img src="./img/Screenshot (15).png" alt="Shopping Website">
       </div>
     </div>
+    <div class="project-item">
+      <div class="project-info">
+        <h1>Hotel Management System</h1>
+        <h2>Streamlined Booking</h2>
+        <p>
+          Built a hotel booking system with robust backend integration using MySQL database.
+          Implemented features for room availability, user bookings, and automated email notifications.
+        </p>
+      </div>
+      <div class="project-img">
+        <img src="./img/Screenshot (17).png" alt="Hotel Management System">
+      </div>
+    </div>
+    <div class="project-item">
+      <div class="project-info">
+        <h1>AI for All Website</h1>
+        <h2>AI-Powered SaaS Platform</h2>
+        <p>
+          Created a SaaS application integrating AI chatbot, AI image generator, article summarizer, 
+          and image identifier features. Focused on providing an all-in-one AI toolkit for users.
+        </p>
+      </div>
+      <div class="project-img">
+        <img src="./img/Screenshot (16).png" alt="AI for All">
+      </div>
+    </div>
+    <div class="project-item">
+      <div class="project-info">
+        <h1>Web Scraper API</h1>
+        <h2>Data at Your Fingertips</h2>
+        <p>
+          Developed a SaaS-based web scraper API using OpenAI API. Enabled efficient data extraction and processing
+          with seamless integration into various platforms for analytics and insights.
+        </p>
+      </div>
+      <div class="project-img">
+        <img src="./img/img-1.png" alt="Web Scraper API">
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
   <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.JPG" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
+<!-- About Section -->
+<section id="about">
+  <div class="about container">
+    <div class="col-left">
+      <div class="about-img">
+        <img src="./img/img-2.JPG" alt="Profile Image">
       </div>
     </div>
-  </section>
-  <!-- End About Section -->
+    <div class="col-right">
+      <h1 class="section-title">About <span>Me</span></h1>
+      <h2>Full-Stack Developer</h2>
+      <p>
+        Passionate about building dynamic web applications, I specialize in both front-end and back-end technologies.
+        I have experience with a variety of frameworks and tools, such as JavaScript (React, Node.js), databases (MongoDB, MySQL),
+        and cloud services (AWS). My goal is to develop scalable, high-quality applications that provide seamless user experiences.
+      </p>
+      <a href="https://drive.google.com/file/d/1EkABQ0MMmkq9o2tWKGG-xUNWSly6oP-z/view?usp=sharing" class="cta" target="_blank" rel="noopener noreferrer">Download Resume</a>    </div>
+  </div>
+</section>
+<!-- End About Section -->
+
 
   <!-- Contact Section -->
   <section id="contact">
@@ -193,23 +216,23 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
           <div class="contact-info">
             <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
+            <h2>+91 8466986682</h2>
+            <h2>+91 8466986682</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
+            <h2>banothrajkumar9959@iitkgp.ac.in</h2>
+            <h2>rajashekarbanoth.2001@gmail.com</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
           <div class="contact-info">
             <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+            <h2>Begumpet, Hyderabad, Telangana, India</h2>
           </div>
         </div>
       </div>
@@ -226,10 +249,10 @@
       <h2>Your Complete Web Solution</h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          <a href="https://www.facebook.com/rajashekar.banoth.908" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          <a href="https://www.linkedin.com/in/banoth-rajashekar-131814190/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></a>
         </div>
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/bubbles/344/twitter-circled.png" /></a>

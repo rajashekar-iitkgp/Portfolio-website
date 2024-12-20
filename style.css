@@ -701,3 +701,126 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+/* Floating Say Hi Section */
+.floating-say-hi {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: linear-gradient(135deg, #6a11cb, #2575fc);
+	color: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 15px 20px;
+	z-index: 1000;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+  }
+  
+  .floating-say-hi:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .floating-say-hi .say-hi-content {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+  
+  .floating-say-hi p {
+	font-size: 18px;
+	margin: 0;
+	font-weight: bold;
+  }
+  
+  .floating-say-hi .say-hi-btn {
+	background: white;
+	color: #2575fc;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 8px 15px;
+	text-decoration: none;
+	transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .floating-say-hi .say-hi-btn:hover {
+	background: #2575fc;
+	color: white;
+  }
+  
+
+/* Contact Form Overlay */
+.contact-form-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 1001;
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+	background: white;
+	padding: 20px;
+	border-radius: 12px;
+	width: 90%;
+	max-width: 400px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	text-align: center;
+  }
+  
+  .contact-form h2 {
+	margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+	display: block;
+	margin: 10px 0 5px;
+	text-align: left;
+	font-size: 14px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+  }
+  
+  .contact-form textarea {
+	resize: none;
+	height: 100px;
+  }
+  
+  .contact-form .submit-btn {
+	background: #2575fc;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+  }
+  
+  .contact-form .submit-btn:hover {
+	background: #6a11cb;
+  }
+  
+  .contact-form .close-btn {
+	background: transparent;
+	color: #2575fc;
+	border: none;
+	margin-top: 10px;
+	cursor: pointer;
+	font-size: 14px;
+  }
+  

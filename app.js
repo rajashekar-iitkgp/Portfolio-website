@@ -23,3 +23,33 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+// Toggle Contact Form Visibility
+function toggleContactForm() {
+	const contactForm = document.getElementById("contact-form");
+	contactForm.style.display =
+	  contactForm.style.display === "flex" ? "none" : "flex";
+  }
+  
+  // Handle Form Submission
+  document.getElementById("messageForm").addEventListener("submit", (e) => {
+	e.preventDefault();
+  
+	// Get form data
+	const name = document.getElementById("name").value;
+	const email = document.getElementById("email").value;
+	const message = document.getElementById("message").value;
+  
+	// Example: Send the message to your email
+	alert(
+	  `Thank you, ${name}! Your message has been sent.\n\nMessage: ${message}`
+	);
+  
+	// Close the form after submission
+	toggleContactForm();
+  
+	// Reset the form
+	e.target.reset();
+  });
+  
+  
